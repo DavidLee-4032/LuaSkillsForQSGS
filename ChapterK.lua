@@ -146,7 +146,7 @@ LuaKeji = sgs.CreateTriggerSkill{
 				if event == sgs.PreCardUsed then
 					card = data:toCardUse().card
 				else
-					card = data:toCardResponse().m_card			 
+					card = data:toCardResponse().m_card
 				end
 				if card:isKindOf("Slash") then
 					player:setFlags("LuaKejiSlashInPlayPhase")

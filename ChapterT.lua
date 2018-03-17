@@ -386,7 +386,7 @@ LuaTianxiang = sgs.CreateTriggerSkill{
 LuaTianxiangDraw = sgs.CreateTriggerSkill{
 	name = "#LuaTianxiang" ,
 	events = {sgs.DamageComplete} ,
-	on_trigger = function(self, event, player, data)
+	on_trigger = function(self, event, player, data)--这里的player是对所有玩家遍历
 		local damage = data:toDamage()
 		if player:isAlive() and (player:getMark("LuaTianxiangTarget") > 0) and damage.transfer then
 			player:drawCards(player:getLostHp())

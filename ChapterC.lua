@@ -633,7 +633,7 @@ LuaChongzhen = sgs.CreateTriggerSkill{
 LuaChouhai = sgs.CreateTriggerSkill{
 	name = "LuaChouhai",
 	events = {sgs.DamageInflicted},
-	frequency = sgs.Skill_Compulsory, 
+	frequency = sgs.Skill_Compulsory,
 	can_trigger = function(self, target)
 		return target ~= nil and target:isAlive()
 	end,

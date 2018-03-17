@@ -856,7 +856,7 @@ LuaShichou = sgs.CreateTriggerSkill{
 							damage.to = target
 							damage.transfer = true
 							room:damage(damage)
-							return true
+							return true--防止自己受到的伤害
 						end
 					end
 				end
